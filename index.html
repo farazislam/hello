@@ -4,60 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Faraz Islam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;600;700&family=Londrina+Outline&family=Lora:wght@500&family=Montserrat:wght@500;700&family=Mulish&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;600;700&family=Londrina+Outline&family=Montserrat:wght@500;700&family=Mulish&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <title>Zelman Meats</title>
     <script src="https://kit.fontawesome.com/899c5adb56.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <!--NAVBAR-->
-    <nav class="navbar">
-        <div class="navbar-brand"><a href="#">Faraz.dev</a></div>
-        <div class="navbar-right">
+    <header>
+        <nav class="nav">
+            <picture class="nav__left">
+                <img class=nav__brand src="images/logo.svg" alt="">
+                <a target="_blank" href="https://www.instagram.com/zelman_meats/"><i
+                        class="fa-brands fa-instagram fa-xl nav__instagram" style="color: #ffffff;"></i></a>
+                <a target="_blank" href="https://en-gb.facebook.com/ZMEATS/"><i
+                        class="fa-brands fa-facebook-f fa-xl nav__facebook" style="color: #ffffff;"></i></a>
+            </picture>
+            <div class="nav__right">
+                <button class="nav__button button">Book Now</button>
+                <button class="nav__button button">Menu</button>
+                <div id="hamburger">
+                    <div class="hamburger__top"></div>
+                    <div class="hamburger__middle"></div>
+                    <div class="hamburger__bottom"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hamburger_menu" class="hamburger_menu hidden">
             <ul>
-                <li><a href="#" class="navbar-link">Home</a></li>
-                <li><a href="#" class="navbar-link">About</a></li>
-                <li><a href="#" class="navbar-link">Projects</a></li>
-                <li><a href="#" class="navbar-link">Contact</a></li>
+                <li><a href="">Find Us</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Join The Tribe</a></li>
+                <li><a href="">About Zelman Meats</a></li>
+                <li><a href="">Know Your Meat</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Get In Touch</a></li>
+                <li class="menu_button"><button class="button">Book Now</button></li>
+                <li class="menu_button"><button class="button">Follow Us</button></li>
             </ul>
-        </div>
-    </nav>
-    <!--NAVBAR-->
+        </section>
 
-    <!--HOME-->
+        <section id="booking" class="booking">
+            <svg class="svg_logo" viewbox="0 0 350 460">
+                <path id="whiteknife" transform="translate(0,5)" d="M0,0
+                   L50,0
+                   L50,90
+                   L150,90
+                   C160,90 50,450 5,450
+                   L4, 0" />
 
-    <section class="home">
-        <div class="profile">
-            <div class="profile-left">
-                <h1>Front-End React Developer</h1>
-                <p>Hi, I'm Faraz Islam. A passionate Front-end React Developer based in Essex, United Kingdom</p>
-                <div class="profile-links">
-                    <i class="profile-link fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i>
-                    <i class="profile-link fa-brands fa-github fa-2xl" style="color: #000000;"></i>
+                <path id="redknife" transform="translate(-3,5) rotate(180, 275, 225)" d="M200,0
+                   L250,0
+                   L250,90
+                   L350,90
+                   C360,90
+                   250,450
+                   200,450
+                   L204,0" />
+            </svg>
+            <button class="button button-booking">Eat Meat, Book Now</button>
+
+            <svg class="svg_chevron" viewbox="0 0 100 100">
+                <path id="chevron" d="M0,0
+                   L50,60
+                   L100,0" />
+            </svg>
+        </section>
+
+        <section id="menu" class="menu">
+            <h1 class="menu__h1">Share Great Steaks</h1>
+            <picture>
+                <img class="menu__img" src="images/steak.jpg" alt="" />
+            </picture>
+            <div class="menu__food">
+                <h2>All on one Plate</h2>
+                <p>Share your animal instinct with a selection of the very best steaks. Don't just have one steak, try
+                    them all with The Zelman Plate.</p>
+                <button class="button_secondary button">Menus</button>
+            </div>
+            <div class="menu__drink">
+                <h2>Zelman Drinks</h2>
+                <p>Find out more about our signature meat cocktails.</p>
+                <button class="button_secondary button">Zelman Drinks</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about__first">
+                <picture>
+                    <img class="about__image" src="images/meatfreaksunite.jpeg" alt="" />
+                </picture>
+            </div>
+            <div class="about__second">
+                <h2>Meat freaks unite</h2>
+                <p>Bringing you a selection of the very finest steaks from around the world, cooked by our fanatical chefs
+                    and served on one signature plate to share. Experience the different cuts, textures and flavours - Join
+                    the tribe today.</p>
+                <button class="button about__button">All about Zelman Meats</button>
+            </div>
+        </section>
+
+        <section id="social" class="social">
+            <h2 class="social__h2">Stay Social @Zelman_Meats</h2>
+            <div class="social__images">
+                <picture><img class="social__image" src="images/social_img1.jpeg" alt="" /></picture>
+                <picture><img class="social__image" src="images/social_img2.jpeg" alt="" /></picture>
+                <picture><img class="social__image" src="images/social_img3.jpeg" alt="" /></picture>
+                <picture><img class="social__image" src="images/social_img4.jpeg" alt="" /></picture>
+                <picture><img class="social__image" src="images/social_img5.jpeg" alt="" /></picture>
+                <picture><img class="social__image" src="images/social_img6.jpeg" alt="" /></picture>
+                <picture><img class="social__image" src="images/social_img7.jpeg" alt="" /></picture>
+            </div>
+        </section>
+
+        <section id="parties" class="parties">
+            <h2 class="parties__h2">Parties and Events</h2>
+            <p class="parties__p">Whether you're looking to host a corporate lunch, dinner with friends or celebrate
+                that big birthday, we've got it covered. Allow our team to plan you one epic night</p>
+            <button class="button parties__button">Start the Party</button>
+            <picture><img class="parties_img" src="images/party_img1.webp" alt="" /></picture>
+        </section>
+
+        <section id="signup" class="signup">
+            <h2 class="signup__h2">Great Steak to the Bone</h2>
+            <p class="signup__p">Sign up to be ahead of the pack</p>
+            <form class="signup__form">
+                <label for="email">Email Address * <p class="signup_required">* indicates required</p></label>
+                <input class="inputfield" type="email" name="email" id="email" required>
+                <label for="name">First Name</label>
+                <input class="inputfield" type="text" name="name" id="name">
+                <button class="button_secondary button">Subscribe</button>
+            </form>
+        </section>
+
+        <section id="contact" class="contact">
+            <div id="map"></div>
+            <div class="contact__details">
+                <h2 class="contact__h2">Knightsbridge</h2>
+                <p class="contact__p openinghours">Opening hours:</p>
+                <p class="contact__p">Monday - Saturday: 12pm-10pm (9.45pm last orders, last bookings at 9.15pm)</p>
+                <p class="contact__p">Sunday: 12pm - 9pm (8.45pm last orders, last bookings 8.15pm)</p>
+                <button class="button contact__button">Menus</button>
+                <p class="contact__p address">Harvey Nichols, 5th Floor,
+                    109 - 125 Knightsbridge, London, SW1X 7RJ </p>
+                <p class="contact__p contact__telephone">0207-201-8625</p>
+                <p class="contact__p contact__email">knightsbridge@zelmanmeats.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <nav class="footer__nav">
+            <div class="footer__left">
+                <img class="footer__brand" src="images/logo.svg" alt="">
+                <div class="footer__break"></div>
+
+                <div class="footer__socialmedia">
+                    <a target="_blank" href="https://www.instagram.com/zelman_meats/">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa-solid fa-circle fa-stack-2x" style="color: #b32635;"></i>
+                            <i class="fa-brands fa-instagram fa-stack-1x" style="color: #ffffff;"></i>
+                        </span>
+                    </a>
+                    <a target="_blank" href="https://en-gb.facebook.com/ZMEATS/">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa-solid fa-circle fa-stack-2x" style="color: #b32635;"></i>
+                            <i class="fa-brands fa-facebook-f fa-stack-1x" style="color: #ffffff;"></i>
+                        </span>
+                    </a>
                 </div>
             </div>
-
-            <div class="profile-right">
-                <div class="profile-pic">
-                    <img src="img/profile.png" alt="">
-                </div>
+            <div class="footer__right">
+                <ul class="footer__menu">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">Get In Touch</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Staff Policy</a></li>
+                    <li><a href="">London</a></li>
+                    <li><a href="">Allergy Information</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
             </div>
-
-            <div class="profile-tech-stack">
-                <p>Tech Stack  |</p>
-                <div class="icon-container"><img src="img/html5.png" alt=""></div>
-                <div class="icon-container"><img src="img/css3.png" alt=""></div>
-                <div class="icon-container"><img src="img/javascript.png" alt=""></div>
-                <div class="icon-container"><img src="img/react.png" alt=""></div>
-                <div class="icon-container"><img src="img/tailwind.png" alt=""></div>
-                <div class="icon-container"><img src="img/nextjs.png" alt=""></div>
-            </div>
+        </nav>
+        <div class="footer__copyright">
+            <p class="footer__copyright">© COPYRIGHT 2023 ZELMAN MEATS. ALL RIGHTS RESERVED.</p>
         </div>
-    </section>
-
-    <!--HOME-->
+    </footer>
 
     <script src="script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZT30B0ys_AcGmZbJOmm8OrDupJuK2IFs&callback=initMap"></script>
 </body>
 
 </html>
